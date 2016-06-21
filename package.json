@@ -5,6 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "node ./bin/samlemons-web",
+    "start:heroku": "node ./bin/samlemons-web",
+    "start:local": "nodemon ./bin/samlemons-web",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "engines": {
@@ -14,6 +16,10 @@
   "license": "ISC",
   "dependencies": {
     "express": "4.13.4",
+    "pug": "2.0.0-beta3",
     "winston": "2.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "1.9.1"
   }
 }

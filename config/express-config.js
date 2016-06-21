@@ -4,6 +4,7 @@ class ExpressConfig {
 
     configure() {
         const app = express();
+        app.set('view engine', 'pug');
         return app;
     }
 }

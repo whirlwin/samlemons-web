@@ -6,7 +6,7 @@ class IndexController {
 }
 
 router.get('/', (req, res) => {
-    res.send('foo bar baz');
+    res.render('index');
 });
 
 
