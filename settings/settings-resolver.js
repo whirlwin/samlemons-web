@@ -9,6 +9,12 @@ class SettingsResolver {
     getHerokuHttpPort() {
         return process.env.PORT;
     }
+
+    getFacebookSettings() {
+        return {
+            appSecret: process.env.FACEBOOK_CLIENT_SECRET;
+        }
+    }
 }
 
 module.exports = SettingsResolver;

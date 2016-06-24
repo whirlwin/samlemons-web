@@ -1,3 +1,6 @@
 {
-    "httpPort": 3000
+    "httpPort": 3000,
+    "facebook": {
+        "clientId": "1611185389211161"
+    }
 }
