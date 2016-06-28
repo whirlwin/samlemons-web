@@ -14,7 +14,7 @@ class SamlemonsConfig {
 
     configure() {
         this.app = this.expressConfig.configure();
-        this.passportConfig = this.passportConfig.configure();
+        this.passportConfig = this.passportConfig.configure(this.app);
         this.winston = this.winstonConfig.configure();
         this.routerConfig.configure(this.app);
         return { app: this.app, winston: this.winston };

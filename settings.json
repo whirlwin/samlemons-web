@@ -1,0 +1,8 @@
+{
+    "domainName": "samlemons-web.herokuapp.com",
+    "facebook": {
+        "appId": "1611185389211161",
+        "scope": [ "user_location", "user_hometown" ]
+    },
+    "httpPort": 3000
+}

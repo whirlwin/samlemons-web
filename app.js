@@ -1,11 +1,11 @@
+const HttpConfig = require('./config/http-config');
 const SamlemonsConfig = require('./config/samelons-config');
-const SettingsResolver = require('./settings/settings-resolver');
 
 class App {
 
     constructor() {
         this.samlemonsConfig = new SamlemonsConfig();
-        this.settingsResolver = new SettingsResolver();
+        this.httpConfig = new HttpConfig();
     }
 
     configure() {
@@ -15,7 +15,7 @@ class App {
     }
 
     start() {
-        const httpPort = this.settingsResolver.getHttpPort();
+        const httpPort = this.httpConfig.getHttpPort();
         this.app.listen(httpPort, () => this.winston.info(`App started on port ${httpPort}`));
     }
 }

@@ -4,10 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node ./bin/samlemons-web",
-    "start:heroku": "node ./bin/samlemons-web",
-    "start:local": "nodemon ./bin/samlemons-web",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "NODE_ENV=development nodemon ./bin/samlemons-web",
+    "heroku": "NODE_ENV=production node ./bin/samlemons-web"
   },
   "engines": {
     "node": "6.2.1"
@@ -16,6 +14,9 @@
   "license": "ISC",
   "dependencies": {
     "express": "4.13.4",
+    "express-session": "^1.13.0",
+    "optional-js": "^1.1.2",
+    "p-s": "^1.0.2",
     "passport": "^0.3.2",
     "passport-facebook": "^2.1.1",
     "pug": "2.0.0-beta3",
