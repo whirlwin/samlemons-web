@@ -47,13 +47,11 @@ class PassportConfig {
     }
 
     getFacebookCallbackHref() {
-        if (process.env.NODE_ENV === 'development') {
-            const rawUrl =`http://localhost:${this.httpConfig.getHttpPort()}${this.getFacebookCallbackPath()}`;
-            return url.parse(rawUrl).href;
-        } else if (process.env.NODE_ENV === 'production') {
+        if (process.env.NODE_ENV === 'production') {
             return url.parse(`http://${Settings.domainName}`).href;
         } else {
-            throw new Error(`NODE_ENV ${process.env.NODE_ENV} not supported`);
+            const rawUrl =`http://localhost:${this.httpConfig.getHttpPort()}${this.getFacebookCallbackPath()}`;
+            return url.parse(rawUrl).href;
         }
     }
 }

@@ -4,8 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "NODE_ENV=development nodemon ./bin/samlemons-web",
-    "heroku": "NODE_ENV=production node ./bin/samlemons-web"
+    "dev": "nodemon ./bin/samlemons-web",
+    "heroku": "NODE_ENV=production node ./bin/samlemons-web",
+    "start:local": "nodemon ./bin/samlemons-web"
+
   },
   "engines": {
     "node": "6.2.1"
