@@ -2,12 +2,16 @@ const crypto = require('crypto');
 const express = require('express');
 const expressSession = require('express-session');
 
+const VIEW_ENGINE = 'pug';
+const ASSETS_DIRECTORY = 'assets';
+
 class ExpressConfig {
 
     configure() {
         const app = express();
         app.use(this.getSeededExpressSession());
-        app.set('view engine', 'pug');
+        app.use(express.static(ASSETS_DIRECTORY));
+        app.set('view engine', VIEW_ENGINE);
         return app;
     }
 

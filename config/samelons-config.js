@@ -1,5 +1,5 @@
 const ExpressConfig = require('./express-config');
-const PassportConfig = require('./passport-config');
+const PassportConfig = require('./auth/passport-config');
 const RouterConfig = require('./router-config');
 const WinstonConfig = require('./winston-config');
 

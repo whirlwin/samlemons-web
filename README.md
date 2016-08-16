@@ -18,6 +18,7 @@ Here is an extensive list of env variables
 
 - FACEBOOK_CLIENT_SECRET (*required*)
 - HTTP_PORT (*optional*)
+- API_BASE_URL (*required*)
 
 3. Start the app locallly
 

@@ -7,7 +7,6 @@
     "dev": "nodemon ./bin/samlemons-web",
     "heroku": "NODE_ENV=production node ./bin/samlemons-web",
     "start:local": "nodemon ./bin/samlemons-web"
-
   },
   "engines": {
     "node": "6.2.1"
@@ -17,6 +16,8 @@
   "dependencies": {
     "express": "4.13.4",
     "express-session": "^1.13.0",
+    "good-guy-http": "^1.7.2",
+    "hystrixjs": "0.0.3",
     "optional-js": "^1.1.2",
     "p-s": "^1.0.2",
     "passport": "^0.3.2",

@@ -1,7 +1,11 @@
 {
+    "samlemonsApi": {
+        "baseUrl": "http://localhost:4000"
+    },
     "domainName": "samlemons-web.herokuapp.com",
     "facebook": {
         "appId": "1611185389211161",
+        "callbackPath": "/auth/facebook/login/callback",
         "scope": [ "user_location", "user_hometown" ]
     },
     "httpPort": 3000

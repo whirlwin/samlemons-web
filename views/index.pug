@@ -2,6 +2,25 @@ extends ./layout
 
 block content
   div.row
-    div.col-xs-4 Helse
-    div.col-xs-4 Transport
-    div.col-xs-4 Kurs
+    div.col-sm-4
+      figure
+        img(src='/img/hospital.png')
+        figcaption
+          h3.ml25 Helse
+          ul.list-unstyled
+            li.ml25
+              a(href='') Lege
+            li.ml25
+              a(href='/') Tannlege
+    div.col-sm-4
+      figure
+        img(src='/img/mop.png')
+        figcaption
+          h3.ml10 Rengjøring
+          div.ml10.text-muted Kommer snart...
+    div.col-sm-4
+      figure
+        img(src='/img/notepad.png')
+        figcaption
+          h3.ml25 Kurs
+          div.ml25.text-muted Kommer snart...
